@@ -1,0 +1,92 @@
+
+/* Imports */
+
+@import url(variables.css);
+
+
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: var(--primary-color);
+}
+
+header, footer, main {
+    padding-left: var(--padding-horizontal-mobile);
+    padding-right: var(--padding-horizontal-mobile);
+}
+
+img {
+    width: 100%;
+}
+
+
+
+
+/* Header */
+
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-top {
+    border-bottom: var(--border-style) var(--border-width) var(--text-color-standard);
+}
+
+.icon-header {
+    display: block;
+    width: 9%;
+}
+
+.logo-header {
+    font-family: var(--primary-font), var(--font-fallback);
+    font-size: var(--size-logo-mobile);
+}
+
+.header-top {
+    padding-top: var(--header-padding-vertical-mobile);
+    padding-bottom: var(--header-padding-vertical-mobile);
+}
+
+#hamburger-menu {
+    padding-top: var(--hamburger-menu-padding);
+    padding-bottom: var(--hamburger-menu-padding);
+}
+
+
+
+#search-icon {
+    order: 1;
+}
+
+.logo-header {
+    order: 2;
+}
+
+#cart-icon {
+    order: 3;
+}
+
+
+/* Hamburger-Menu */
+
+
+nav,
+#menu-checkbox {
+    display: none;
+}
+
+#menu-checkbox:checked ~ nav {
+    display: block;
+}
+
+nav {
+    position: absolute;
+}

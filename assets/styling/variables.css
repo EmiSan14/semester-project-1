@@ -1,0 +1,41 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap');
+
+
+:root {
+
+    /* Colors */
+
+    --primary-color: #6CEBF5;
+    --background-color: #FFFFFF;
+    --text-color-standard: #000000;
+    --cta-color-standard-: #F47BBB;
+    --secondary-color-purple: #8E00F4;
+    --secondary-color-green: #29F08D;
+    --secondary-color-blue: #0115F5;
+    --secondary-color-yellow: #F5ED15;
+    --secondary-color-orange: #F07229;
+    --secondary-color-red: #F5271C;
+
+
+    /* Fonts */
+
+    --primary-font: "Outfit";
+    --secondary-font: "Neuton";
+    --font-fallback: "sans-serif";
+
+    --size-logo-mobile: 48px;
+
+
+    /* Margins/Padding/Borders */
+
+    --padding-horizontal-mobile: 10px;
+
+    --header-padding-vertical-mobile: 15px;
+    --hamburger-menu-padding: 30px;
+
+    --border-style: solid;
+    --border-width: 1px;
+    --border-radius: 4px;
+}

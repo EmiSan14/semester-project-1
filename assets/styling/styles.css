@@ -52,6 +52,11 @@ h1, h2, h3, h4, h5, h6 {
     padding: var(--cta-padding-mobile) 0;
 }
 
+.section-main {
+    margin-top: var(--margin-section-horizontal-mobile);
+    border-bottom: var(--border-style) var(--border-width) var(--text-color-standard);
+}
+
 
 
 
@@ -205,6 +210,32 @@ form input {
     margin-top: var(--margin-diff-element-horizontal-mobile);
 }
 
+
+
+
+
+
+/* Homepage (Index) */
+
+
+
+.exhibitions-home * {
+    margin-bottom: var(--margin-diff-element-horizontal-mobile);
+}
+
+.heading-background {
+    margin-bottom: var(--margin-section-horizontal-mobile);
+    padding: ;
+}
+
+.heading-background * {
+    font-family: var(--primary-font), var(--font-fallback);
+    text-transform: uppercase;
+}
+
+#home-event-2 {
+    display: none;
+}
 
 
 

@@ -10,7 +10,7 @@
     --primary-color: #6CEBF5;
     --background-color: #FFFFFF;
     --text-color-standard: #000000;
-    --cta-color-standard-: #F47BBB;
+    --cta-color-standard: #F47BBB;
     --secondary-color-purple: #8E00F4;
     --secondary-color-green: #29F08D;
     --secondary-color-blue: #0115F5;
@@ -26,16 +26,54 @@
     --font-fallback: "sans-serif";
 
     --size-logo-mobile: 48px;
+    --size-nav-a-mobile: 32px;
+    --size-heading-standard-mobile: 24px;
+    --size-footer-categories-mobile: 18px;
+
+    --weight-logo: 600;
+    --weight-heading-standard-mobile: 600;
+    --weight-footer-categories: 400;
+
+
+
+    /* Fonts Media Queries */
+
+    --size-nav-a-big: 28px;
+
+
 
 
     /* Margins/Padding/Borders */
+
+    --margin-section-horizontal-mobile: 60px;
+    --margin-diff-element-horizontal-mobile: 40px;
+    --margin-same-element-horizontal-mobile: 20px;
 
     --padding-horizontal-mobile: 10px;
 
     --header-padding-vertical-mobile: 15px;
     --hamburger-menu-padding: 30px;
+    --footer-padding-vertical-mobile: 40px;
 
     --border-style: solid;
     --border-width: 1px;
     --border-radius: 4px;
+
+
+    /* Buttons */
+
+    --size-cta-standard-mobile: 24px;
+    --weight-cta-standard: 600;
+
+    --cta-border-color-standard: #000000;
+
+    --cta-padding-mobile: 5px;
+
+    --cta-border-width: 2px;
+
+
+
+    /* Forms */
+
+    --input-border-width: 2px;
 }

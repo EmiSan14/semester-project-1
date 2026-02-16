@@ -29,6 +29,22 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
+p {
+    font-family: var(--primary-font), var(--font-fallback);
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color-standard);
+}
+
+
+
+
+
+
+/* Reoccuring */
 
 
 
@@ -42,18 +58,36 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: var(--weight-heading-standard-mobile);
 }
 
+.white-text {
+    color: var(--background-color);
+}
+
 .button-standard {
     background-color: var(--cta-color-standard);
     border: var(--border-style) var(--cta-border-width) var(--cta-border-color-standard);
-    border-radius: var(--border-radius);
+    padding: var(--cta-padding-mobile) 0;
+    width: 100%;
+}
+
+.button-exhibitions {
+    font-family: var(--primary-font), var(--font-fallback);
     font-size: var(--size-cta-standard-mobile);
     font-weight: var(--weight-cta-standard);
+    padding: var(--cta-padding-mobile) var(--cta-padding-small-mobile);
+    border-style: var(--border-style);
+    border-width: var(--cta-border-width);
+}
+
+.button-standard, 
+.button-exhibitions {
+    font-size: var(--size-cta-standard-mobile);
+    font-weight: var(--weight-cta-standard);
+    border-radius: var(--border-radius);
     text-transform: uppercase;
-    padding: var(--cta-padding-mobile) 0;
 }
 
 .section-main {
-    margin-top: var(--margin-section-horizontal-mobile);
+    margin-top: var(--margin-section-vertical-mobile);
     border-bottom: var(--border-style) var(--border-width) var(--text-color-standard);
 }
 
@@ -142,7 +176,7 @@ nav {
 
 
 footer * .heading-standard {
-    margin-bottom: var(--margin-diff-element-horizontal-mobile);
+    margin-bottom: var(--margin-diff-element-vertical-mobile);
 }
 
 .social-media, .newsletter-form {
@@ -178,25 +212,26 @@ form input {
 }
 
 #name {
-    margin-bottom: var(--margin-same-element-horizontal-mobile);
+    margin-bottom: var(--margin-same-element-vertical-mobile);
 }
 
 #email {
-    margin-bottom: var(--margin-diff-element-horizontal-mobile);
+    margin-bottom: var(--margin-diff-element-vertical-mobile);
 }
 
 .footer-div {
     display: flex;
     flex-direction: column;
     border-bottom: var(--border-style) var(--border-width) var(--text-color-standard);
-    padding-top: var(--margin-same-element-horizontal-mobile);
+    padding-top: var(--margin-same-element-vertical-mobile);
 }
 
 .footer-div a {
-    margin-bottom: var(--margin-same-element-horizontal-mobile);
+    margin-bottom: var(--margin-same-element-vertical-mobile);
 }
 
-.footer-div a, p {
+.footer-div a,
+.footer-div p {
     font-family: var(--secondary-font), var(--font-fallback);
     font-size: var(--size-footer-categories-mobile);
     font-weight: var(--weight-footer-categories);
@@ -206,8 +241,12 @@ form input {
     padding-top: 0;
 }
 
+.first-footer-div > p {
+    margin-bottom: var(--margin-same-element-vertical-mobile);
+}
+
 #heading-csm-footer {
-    margin-top: var(--margin-diff-element-horizontal-mobile);
+    margin-top: var(--margin-diff-element-vertical-mobile);
 }
 
 
@@ -218,14 +257,43 @@ form input {
 /* Homepage (Index) */
 
 
+.hero-section-div > h1,
+#hero-section > a {
+    margin-bottom: var(--margin-diff-element-vertical-mobile);
+    margin-top: var(--margin-diff-element-vertical-mobile);
+}
 
-.exhibitions-home * {
-    margin-bottom: var(--margin-diff-element-horizontal-mobile);
+.hero-section-div > h1 {
+    text-transform: uppercase;
+}
+
+.hero-section-div > p {
+    margin-top: var(--margin-same-element-vertical-mobile);
+}
+
+.hero-section-div > img {
+    margin-bottom: 0;
+}
+
+.section-main p {
+    font-weight: var(--weight-exhibition-p-home);
+    font-size: var(--size-exhibition-p-home);
+}
+
+#display-hall {
+}
+
+
+.exhibitions-home > * {
+    margin-bottom: var(--margin-diff-element-vertical-mobile);
 }
 
 .heading-background {
-    margin-bottom: var(--margin-section-horizontal-mobile);
-    padding: ;
+    margin-bottom: var(--margin-section-vertical-mobile);
+}
+
+.exhibitions-home > .heading-background {
+    margin-bottom: var(--margin-diff-element-vertical-mobile);
 }
 
 .heading-background * {
@@ -233,9 +301,76 @@ form input {
     text-transform: uppercase;
 }
 
+#heading-section-home-1,
+#heading-section-home-2 {
+    text-transform: none;
+}
+
+.heading-background > .heading-standard {
+    padding-left: var(--padding-horizontal-mobile);
+}
+
+
 #home-event-2 {
     display: none;
 }
+
+
+.buttons-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+#hero-section, .heading-section > * {
+    background-color: var(--primary-color);
+}
+
+.h-b-cosmology, .buttons-cosmology > a {
+    border-color: var(--secondary-color-purple);
+    background-color: var(--secondary-color-purple);
+}
+
+.h-b-evolution, .buttons-evolution > a {
+    border-color: var(--cta-border-color-standard);
+    background-color: var(--secondary-color-yellow);
+}
+
+.h-b-biology-and-medicine, .buttons-biology-and-medicine > a {
+    border-color: var(--secondary-color-red);
+    background-color: var(--secondary-color-red);
+}
+
+.h-b-event-night, .buttons-event-night > a {
+    border-color: var(--cta-border-color-standard);
+    background-color: var(--secondary-color-orange);
+}
+
+#exhibitions-section-home,
+#special-section-home {
+    border-bottom: none;
+}
+
+.bottom-button-div {
+    padding-top: var(--margin-section-vertical-mobile);
+    border-top: var(--border-style) var(--border-width) var(--text-color-standard);
+}
+
+#special-section-home {
+    margin-top: var(--margin-section-vertical-mobile);
+}
+
+#bottom-button-div-2 {
+    margin-bottom: var(--margin-section-vertical-mobile);
+}
+
+#hero-section > a,
+.bottom-button-div > a {
+    box-sizing: border-box;
+    display: block;
+    text-align: center;
+}
+
+
 
 
 

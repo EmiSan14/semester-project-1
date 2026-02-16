@@ -29,10 +29,12 @@
     --size-nav-a-mobile: 32px;
     --size-heading-standard-mobile: 24px;
     --size-footer-categories-mobile: 18px;
+    --size-exhibition-p-home: 18px;
 
     --weight-logo: 600;
     --weight-heading-standard-mobile: 600;
     --weight-footer-categories: 400;
+    --weight-exhibition-p-home: 500;
 
 
 
@@ -45,9 +47,9 @@
 
     /* Margins/Padding/Borders */
 
-    --margin-section-horizontal-mobile: 60px;
-    --margin-diff-element-horizontal-mobile: 40px;
-    --margin-same-element-horizontal-mobile: 20px;
+    --margin-section-vertical-mobile: 60px;
+    --margin-diff-element-vertical-mobile: 40px;
+    --margin-same-element-vertical-mobile: 20px;
 
     --padding-horizontal-mobile: 10px;
 
@@ -68,6 +70,7 @@
     --cta-border-color-standard: #000000;
 
     --cta-padding-mobile: 5px;
+    --cta-padding-small-mobile: 15px;
 
     --cta-border-width: 2px;
 

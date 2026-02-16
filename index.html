@@ -15,31 +15,33 @@
 
             <div class="header-top">
 
-                <a class="logo-header" id="logo-full" role="button" aria-label="logo for the community science museum">
+                <a class="logo-header" id="logo-full" role="button" aria-label="logo for the community science museum" tabindex="0">
                     Community Science Museum
                 </a>
-                <a class="logo-header" id="logo-abbr" role="button" aria-label="logo for the community science museum">C.S.M.</a>
+                <a class="logo-header" id="logo-abbr" role="button" aria-label="logo for the community science museum" tabindex="0">
+                    C.S.M.
+                </a>
                 <a class="icon-header" id="search-icon">
-                    <img src="assets/images/search-black.png" alt="search-icon">
+                    <img src="assets/images/search-black.png" alt="search-icon" tabindex="0">
                 </a>
                 <a class="icon-header" id="cart-icon">
-                    <img src="assets/images/cart.png" alt="cart-icon">
+                    <img src="assets/images/cart.png" alt="cart-icon" tabindex="0">
                 </a>
             
             </div>
 
-            <input type="checkbox" id="menu-checkbox">
+            <input type="checkbox" id="menu-checkbox" aria-label="hamburger-menu">
             <label for="menu-checkbox" id="menu-checkbox-id">
-                <i id="hamburger-menu" class="fa-solid fa-bars fa-2xl"></i>
+                <i id="hamburger-menu" class="fa-solid fa-bars fa-2xl" tabindex="0"></i>
             </label>
 
             <nav class="navigation">
 
                 <div class="navigation-div">
 
-                    <a>Exhibitions</a>
-                    <a>Tickets</a>
-                    <a>Information</a>
+                    <a href="exhibitions.html" tabindex="0">Exhibitions</a>
+                    <a href="tickets.html" tabindex="0">Tickets</a>
+                    <a href="information.html" tabindex="0">Information</a>
 
                 </div>
 
@@ -51,54 +53,56 @@
 
         <main>
 
-            <section class="section-main">
+            <section class="section-main" id="hero-section">
 
-                <img src="assets/images/entrance-whale-skeleton.jpg" alt="Our entrance where a whale-skeleton is hanging">
+                <img src="assets/images/entrance-whale-skeleton.jpg" alt="Our entrance where a whale-skeleton is hanging" tabindex="0">
 
-                <div>
+                <div class="hero-section-div">
 
-                    <h1 class="heading-standard">explore together</h1>
-                    <p>
+                    <h1 class="heading-standard" tabindex="0">explore together</h1>
+                    <p tabindex="0">
                         Come join us at the Community Science Museum where we're committed to making science accessible to all.
                     </p>
-                    <p>
+                    <p tabindex="0">
                         The aim of our museum is to create a space where everyone can experience the wonders of our discoveries 
                         and perhaps even ignite a lifelong passion to continue the exploration of the world around us.
                     </p>
 
                 </div>
 
-                <img src="assets/images/display-hall.jpg" alt="Our hall filled with displays">
+                <a class="button-standard" href="tickets.html" tabindex="0">buy tickets</a>
+
+                <img id="display-hall" src="assets/images/display-hall.jpg" alt="Our hall filled with displays" tabindex="0">
 
             </section>
 
-            <section class="section-main">
+            <section class="section-main" id="exhibitions-section-home">
                 
-                <div class="heading-background">
+                <div class="heading-background heading-section">
 
-                    <h2 class="heading-standard">Current Exhibitions:</h2>
+                    <h2 class="heading-standard" id="heading-section-home-1" tabindex="0">Current Exhibitions:</h2>
 
                 </div>
 
                 <article class="exhibitions-home">
 
-                    <img src="assets/images/spacesuit.jpg" alt="mannequin with yellow spacesuit on in chair">
+                    <img src="assets/images/spacesuit.jpg" alt="mannequin with yellow spacesuit on in chair" tabindex="0">
 
-                    <div class="heading-background">
+                    <div class="heading-background h-b-cosmology">
 
-                        <h3 class="heading-standard">cosmology</h3>
+                        <h3 class="heading-standard white-text" tabindex="0">cosmology</h3>
 
                     </div>
 
-                    <p>
+                    <p tabindex="0">
                         Our fantastic exhibition, "The Sky Above Us", explores the night sky
                          and what we can see and know about the universe around us.
                     </p>
 
-                    <div>
+                    <div class="buttons-div buttons-cosmology">
 
-                        <button>tickets</button>
-                        <button>details</button>
+                        <a class="button-exhibitions white-text" href="tickets.html" tabindex="0">tickets</a>
+                        <a class="button-exhibitions white-text" href="exhibition-cosmology.html" tabindex="0">details</a>
                     
                     </div>
                 
@@ -106,23 +110,23 @@
 
                 <article class="exhibitions-home">
 
-                    <img src="assets/images/human-ancestors-skeletons.jpg" alt="4 skeletons of human ancestors">
+                    <img src="assets/images/human-ancestors-skeletons.jpg" alt="4 skeletons of human ancestors" tabindex="0">
 
-                    <div class="heading-background">
+                    <div class="heading-background h-b-evolution">
 
-                        <h3 class="heading-standard">evolution</h3>
+                        <h3 class="heading-standard" tabindex="0">evolution</h3>
 
                     </div>
 
-                    <p>
+                    <p tabindex="0">
                         For centuries, philosophers and scientists have wrestled with the question of our origins.
                          Where do we come from and how did we get here?
                     </p>
 
-                    <div>
+                    <div class="buttons-div buttons-evolution">
 
-                        <button>tickets</button>
-                        <button>details</button>
+                        <a class="button-exhibitions" href="tickets.html" tabindex="0">tickets</a>
+                        <a class="button-exhibitions" href="under-construction.html" tabindex="0">details</a>
                     
                     </div>
                 
@@ -130,63 +134,71 @@
 
                 <article class="exhibitions-home">
 
-                    <img src="assets/images/microscope.jpg" alt="man looking into microscope">
+                    <img src="assets/images/microscope.jpg" alt="man looking into microscope" tabindex="0">
 
-                    <div class="heading-background">
+                    <div class="heading-background h-b-biology-and-medicine">
 
-                        <h3 class="heading-standard">biology and medicine</h3>
+                        <h3 class="heading-standard white-text" tabindex="0">biology and medicine</h3>
 
                     </div>
 
-                    <p>
+                    <p tabindex="0">
                         From micro-organisms to the human body, major breakthroughs in biology are
                          offering us unique insights into the great wonders of the tiny world.
                     </p>
 
-                    <div>
+                    <div class="buttons-div buttons-biology-and-medicine">
 
-                        <button>tickets</button>
-                        <button>details</button>
+                        <a class="button-exhibitions white-text" href="tickets.html" tabindex="0">tickets</a>
+                        <a class="button-exhibitions white-text" href="under-construction.html" tabindex="0">details</a>
                     
                     </div>
 
-                    <button class="button-standard">more exhibits</button>
+                    <div class="bottom-button-div">
+
+                        <a class="button-standard" href="exhibitions.html" tabindex="0">more exhibitions</a>
+
+                    </div>
                 
                 </article>
 
             </section>
 
-            <section class="section-main">
+            <section class="section-main" id="special-section-home">
 
-                <div class="heading-background">
-                    <h2 class="heading-standard">Special Events and Exhibitions:</h2>
+                <div class="heading-background heading-section">
+                    <h2 class="heading-standard" id="heading-section-home-2" tabindex="0">Special Events and Exhibitions:</h2>
                 </div>
 
                 <article class="exhibitions-home">
 
-                    <img src="assets/images/hall-night-crop.jpg" alt="museum hall at night">
+                    <img src="assets/images/hall-night-crop.jpg" alt="museum hall at night" tabindex="0">
 
-                    <div class="heading-background">
-                        <h3 class="heading-standard">night in the museum</h3>
+                    <div class="heading-background h-b-event-night">
+                        <h3 class="heading-standard" tabindex="0">night in the museum</h3>
                     </div>
 
-                    <p>
+                    <p tabindex="0">
                         Get your family together for an exciting night in the museum 
                         as you sleep over beside dinosaurs and science displays. 
                         Bring your own sleeping bag and get ready to rough it 
                         as we go exploring the wonders of science.
                     </p>
 
-                    <div>
+                    <div class="buttons-div buttons-event-night">
 
-                        <button>tickets</button>
-                        <button>details</button>
+                        <a class="button-exhibitions" href="tickets.html" tabindex="0">tickets</a>
+                        <a class="button-exhibitions" href="under-construction.html" tabindex="0">details</a>
                     
                     </div>
 
-                    <img id="home-event-2" src="assets/images/hall-night-crop.jpg" alt="museum hall at night">
+                    <img id="home-event-2" src="assets/images/hall-night-crop.jpg" alt="museum hall at night" tabindex="0">
 
-                    <button class="button-standard">more exhibits</button>
+                    <div class="bottom-button-div" id="bottom-button-div-2">
+
+                        <a class="button-standard" href="exhibitions.html" tabindex="0">more exhibitions</a>
+
+                    </div>
                 
                 </article>
 
@@ -200,23 +212,23 @@
 
             <section class="social-media">
 
-                <h2 class="heading-standard">Follow us on Social Media:</h2>
+                <h2 class="heading-standard" tabindex="0">Follow us on Social Media:</h2>
 
                 <div class="social-media-icons">
 
-                    <a class="social-media-icon">
+                    <a class="social-media-icon" tabindex="0">
                         <img src="assets/images/facebook-icon.png" alt="facebook-icon">
                     </a>
-                    <a class="social-media-icon">
+                    <a class="social-media-icon" tabindex="0">
                         <img src="assets/images/instagram-icon.png" alt="instagram-icon">
                     </a>
-                    <a class="social-media-icon">
+                    <a class="social-media-icon" tabindex="0">
                         <img src="assets/images/youtube-icon.png" alt="youtube-icon">
                     </a>
-                    <a class="social-media-icon">
+                    <a class="social-media-icon" tabindex="0">
                         <img src="assets/images/twitter-icon.png" alt="twitter/X-icon">
                     </a>
-                    <a class="social-media-icon">
+                    <a class="social-media-icon" tabindex="0">
                         <img src="assets/images/tiktok-icon.png" alt="tiktok-icon">
                     </a>
 
@@ -226,15 +238,16 @@
 
             <section class="newsletter-form">
 
-                <h2 class="heading-standard">Sign up to our newsletter:</h2>
+                <h2 class="heading-standard" tabindex="0">Sign up to our newsletter:</h2>
 
                 <form>
 
-                    <label id="name-label" for="name">Name:</label>
-                    <input type="text" id="name" title="Write your full name" required>
-                    <label id="email-label" for="email">E-mail:</label>
-                    <input type="email" id="email" title="For example: blank@gmail.com" required>
-                    <input type="submit" value="sign up" class="button-standard" id="form-cta" aria-label="send to get newsletter">
+                    <label id="name-label" for="name" tabindex="0">Name:</label>
+                    <input type="text" id="name" title="Write your full name" required tabindex="0">
+                    <label id="email-label" for="email" tabindex="0">E-mail:</label>
+                    <input type="email" id="email" title="For example: blank@gmail.com" required tabindex="0">
+                    <input type="submit" value="sign up" class="button-standard" id="form-cta" 
+                    aria-label="send to get newsletter" tabindex="0">
 
                 </form>
 
@@ -244,27 +257,27 @@
 
                 <div class="footer-container">
 
-                    <h2 class="heading-standard" id="heading-csm-footer">Community Science Museum</h2>
+                    <h2 class="heading-standard" id="heading-csm-footer" tabindex="0">Community Science Museum</h2>
 
                     <div class="footer-div first-footer-div">
-                        <p>627 S Maple St, French Lick, IN 47423, USA</p>
+                        <p tabindex="0">627 S Maple St, French Lick, IN 47423, USA</p>
                     </div>
 
-                    <div class="footer-div">
-                        <a>Contact</a>
-                        <a>About</a>
-                        <a>Partners and Donors</a>
+                    <div class="footer-div" tabindex="0">
+                        <a href="under-construction.html" tabindex="0">Contact</a>
+                        <a href="under-construction.html" tabindex="0">About</a>
+                        <a href="under-construction.html" tabindex="0">Partners and Donors</a>
                     </div>
 
-                    <div class="footer-div">
-                        <a>Support us</a>
-                        <a>Volunteer</a>
-                        <a>Internships</a>
+                    <div class="footer-div" tabindex="0">
+                        <a href="under-construction.html" tabindex="0">Support us</a>
+                        <a href="under-construction.html" tabindex="0">Volunteer</a>
+                        <a href="under-construction.html" tabindex="0">Internships</a>
                     </div>
 
-                    <div class="footer-div">
-                        <a>Terms and Conditions</a>
-                        <a>Cookies and Privacy</a>
+                    <div class="footer-div" tabindex="0">
+                        <a href="under-construction.html" tabindex="0">Terms and Conditions</a>
+                        <a href="under-construction.html" tabindex="0">Cookies and Privacy</a>
                     </div>
 
                 </div>

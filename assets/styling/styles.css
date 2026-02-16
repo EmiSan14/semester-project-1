@@ -39,6 +39,11 @@ a {
     color: var(--text-color-standard);
 }
 
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
 
 
 
@@ -47,6 +52,29 @@ a {
 /* Reoccuring */
 
 
+
+.breadcrumbs-div {
+    margin-top: var(--margin-section-vertical-mobile);
+}
+
+.breadcrumbs {
+    display: flex;
+    gap: 8px;
+}
+
+.breadcrumbs > li {
+    font-family: var(--secondary-font), var(--font-fallback);
+    font-size: var(--size-breadcrumbs);
+    text-transform: capitalize;
+}
+
+.breadcrumbs a {
+    text-decoration: underline;
+}
+
+.breadcrumbs a:hover {
+    text-decoration-color: var(--primary-color);
+}
 
 .heading-standard,
 .button-standard {
@@ -308,6 +336,7 @@ form input {
 
 .heading-background > .heading-standard {
     padding-left: var(--padding-horizontal-mobile);
+    padding-right: var(--padding-horizontal-mobile);
 }
 
 
@@ -370,6 +399,37 @@ form input {
     text-align: center;
 }
 
+
+
+
+
+
+
+
+
+/* Exhibitions-Page */
+
+
+
+.h-b-robotics-and-ai, .buttons-robotics-and-ai > a {
+    border-color: var(--secondary-color-blue);
+    background-color: var(--secondary-color-blue);
+}
+
+.h-b-ecology, .buttons-ecology > a {
+    border-color: var(--cta-border-color-standard);
+    background-color: var(--secondary-color-green);
+}
+
+.h-b-event-professor, .buttons-event-professor > a {
+    border-color: var(--secondary-color-blue);
+    background-color: var(--secondary-color-blue);
+}
+
+.h-b-event-loan, .buttons-event-loan > a {
+    border-color: var(--cta-border-color-standard);
+    background-color: var(--secondary-color-green);
+}
 
 
 

@@ -28,12 +28,18 @@
     --size-logo-mobile: 48px;
     --size-nav-a-mobile: 32px;
     --size-heading-standard-mobile: 24px;
+    --size-heading-specific-mobile: 22px;
+    --size-heading-specific-mobile: 20px;
+    --size-descriptive-text-mobile: 16px;
     --size-footer-categories-mobile: 18px;
     --size-exhibition-p-home: 18px;
     --size-breadcrumbs: 24px;
 
     --weight-logo: 600;
     --weight-heading-standard-mobile: 600;
+    --weight-heading-specific-mobile: 500;
+    --weight-heading-small-mobile: 500;
+    --weight-descriptive-text-mobile: 300;
     --weight-footer-categories: 400;
     --weight-exhibition-p-home: 500;
 

@@ -23,6 +23,7 @@ main {
 
 img {
     width: 100%;
+    display: block;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -53,10 +54,6 @@ ul {
 
 
 
-.breadcrumbs-div {
-    margin-top: var(--margin-section-vertical-mobile);
-}
-
 .breadcrumbs {
     display: flex;
     flex-wrap: wrap;
@@ -77,6 +74,57 @@ ul {
 .back-to-blank a:hover {
     text-decoration-color: var(--primary-color);
 }
+
+
+
+/* Reoccuring Margins */
+
+.heading-background {
+    /* Has to be above the ones below to be overwritten properly */
+    margin-bottom: var(--margin-section-vertical-mobile);
+}
+
+#hero-section > a,
+.hero-section-div .heading-standard,
+.exhibitions-home > *,
+.article-specific-exhibition > .heading-background,
+.article-specific-exhibition > p,
+.article-specific-exhibition > img,
+.article-specific-exhibition > a,
+.article-information .heading-background,
+.article-information .heading-specific,
+.article-information .heading-small,
+.article-information > img {
+    margin-top: var(--margin-diff-element-vertical-mobile);
+    margin-bottom: var(--margin-diff-element-vertical-mobile);
+}
+
+.hero-section-div > p,
+.article-information > p {
+    margin-top: var(--margin-same-element-vertical-mobile);
+    margin-bottom: var(--margin-same-element-vertical-mobile);
+}
+
+.article-specific-exhibition .heading-small {
+    margin-top: var(--margin-diff-element-vertical-mobile);
+    margin-bottom: var(--margin-same-element-vertical-mobile);
+}
+
+.article-specific-exhibition ul {
+    margin-top: var(--margin-same-element-vertical-mobile);
+    margin-bottom: var(--margin-diff-element-vertical-mobile);
+}
+
+.breadcrumbs-div,
+.article-specific-exhibition > .h-b-cosmology {
+    margin-top: var(--margin-section-vertical-mobile);
+    margin-bottom: var(--margin-section-vertical-mobile);
+}
+
+
+
+
+
 
 .back-to-blank {
     margin-top: var(--margin-section-vertical-mobile);
@@ -100,10 +148,6 @@ ul {
     font-family: var(--primary-font), var(--font-fallback);
 }
 
-.heading-background {
-    margin-bottom: var(--margin-section-vertical-mobile);
-}
-
 .heading-background * {
     font-family: var(--primary-font), var(--font-fallback);
     text-transform: uppercase;
@@ -113,7 +157,11 @@ ul {
     font-family: var(--primary-font), var(--font-fallback);
 }
 
-.heading-background .heading-small {
+
+.heading-background .heading-small,
+#heading-section-home-1,
+#heading-section-home-2,
+#heading-section-information-1 {
     text-transform: none;
 }
 
@@ -175,11 +223,19 @@ ul {
 
 .hero-section-div,
 .exhibitions-home > p,
-.article-specific-exhibition > p {
+.article-specific-exhibition > p,
+.article-information > p {
     padding-left: var(--padding-horizontal-mobile);
     padding-right: var(--padding-horizontal-mobile);
 }
 
+.article-specific-exhibition p,
+.article-specific-exhibition li,
+.article-information p,
+.article-information li {
+    font-size: var(--size-descriptive-text-mobile);
+    font-weight: var(--weight-descriptive-text-mobile);
+}
 
 
 
@@ -348,46 +404,16 @@ form input {
 /* Homepage (Index) */
 
 
-.hero-section-div > h1,
-#hero-section > a {
-    margin-bottom: var(--margin-diff-element-vertical-mobile);
-    margin-top: var(--margin-diff-element-vertical-mobile);
-}
+
 
 .hero-section-div > h1 {
     text-transform: uppercase;
-}
-
-.hero-section-div > p {
-    margin-top: var(--margin-same-element-vertical-mobile);
-}
-
-.hero-section-div > img {
-    margin-bottom: 0;
 }
 
 .section-main p {
     font-weight: var(--weight-exhibition-p-home);
     font-size: var(--size-exhibition-p-home);
 }
-
-#display-hall {
-}
-
-
-.exhibitions-home > * {
-    margin-bottom: var(--margin-diff-element-vertical-mobile);
-}
-
-.exhibitions-home > .heading-background {
-    margin-bottom: var(--margin-diff-element-vertical-mobile);
-}
-
-#heading-section-home-1,
-#heading-section-home-2 {
-    text-transform: none;
-}
-
 
 #home-event-2 {
     display: none;
@@ -501,22 +527,6 @@ form input {
     margin-bottom: var(--margin-section-vertical-mobile);
 }
 
-.article-specific-exhibition > p,
-.article-specific-exhibition > img,
-.button-specific-exhibition {
-    margin-top: var(--margin-diff-element-vertical-mobile);
-}
-
-.article-specific-exhibition p,
-.article-specific-exhibition li {
-    font-size: var(--size-descriptive-text-mobile);
-    font-weight: var(--weight-descriptive-text-mobile);
-}
-
-.article-specific-exhibition .heading-small {
-    margin-bottom: var(--margin-same-element-vertical-mobile);
-    margin-top: var(--margin-diff-element-vertical-mobile);
-}
 
 .article-specific-exhibition ul {
     margin: 0;
@@ -537,6 +547,32 @@ form input {
     display: block;
     box-sizing: border-box;
 }
+
+
+
+
+
+
+
+
+/* Information-Page */
+
+
+
+
+
+
+
+/* Test (DELETE LATER) */
+
+
+
+
+
+
+
+
+
 
 
 

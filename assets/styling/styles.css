@@ -667,6 +667,13 @@ form input {
     background-color: var(--date-color-standard);
     color: var(--text-color-standard);
     border: var(--input-border-style) var(--input-border-width) var(--date-color-standard);
+    transition-property: background, border;
+    transition-duration: 0.1s;
+}
+
+.date-mar:hover {
+    background-color: var(--primary-color);
+    border: var(--input-border-style) var(--input-border-width) var(--cta-border-color-standard);
 }
 
 .date-feb,
@@ -676,6 +683,8 @@ form input {
     box-sizing: content-box;
     width: 10%;
 }
+
+
 
 
 

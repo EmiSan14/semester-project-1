@@ -91,10 +91,12 @@ ul {
 .article-specific-exhibition > p,
 .article-specific-exhibition > img,
 .article-specific-exhibition > a,
+.article-information,
 .article-information .heading-background,
 .article-information .heading-specific,
 .article-information .heading-small,
-.article-information > img {
+.article-information > img,
+.section-information .button-standard {
     margin-top: var(--margin-diff-element-vertical-mobile);
     margin-bottom: var(--margin-diff-element-vertical-mobile);
 }
@@ -221,6 +223,12 @@ ul {
     border-bottom: var(--border-style) var(--border-width) var(--text-color-standard);
 }
 
+.section-information {
+    margin-top: var(--margin-section-vertical-mobile);
+    margin-bottom: var(--margin-section-vertical-mobile);
+    border-bottom: var(--border-style) var(--border-width) var(--text-color-standard);
+}
+
 .hero-section-div,
 .exhibitions-home > p,
 .article-specific-exhibition > p,
@@ -235,6 +243,18 @@ ul {
 .article-information li {
     font-size: var(--size-descriptive-text-mobile);
     font-weight: var(--weight-descriptive-text-mobile);
+}
+
+
+
+
+.article-specific-exhibition ul,
+.article-information ul {
+    margin: 0;
+    font-family: var(--primary-font), var(--font-fallback);
+    list-style-type: initial;
+    padding-left: 30px;
+    padding-right: var(--padding-horizontal-mobile);
 }
 
 
@@ -527,15 +547,6 @@ form input {
     margin-bottom: var(--margin-section-vertical-mobile);
 }
 
-
-.article-specific-exhibition ul {
-    margin: 0;
-    font-family: var(--primary-font), var(--font-fallback);
-    list-style-type: initial;
-    padding-left: 30px;
-    padding-right: var(--padding-horizontal-mobile);
-}
-
 .article-specific-exhibition .back-to-blank {
     border-bottom: var(--border-style) var(--border-width) var(--text-color-standard);
 }
@@ -558,6 +569,11 @@ form input {
 /* Information-Page */
 
 
+
+.section-information .button-standard {
+    display: block;
+    box-sizing: border-box;
+}
 
 
 

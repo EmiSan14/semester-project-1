@@ -84,25 +84,31 @@ ul {
     margin-bottom: var(--margin-section-vertical-mobile);
 }
 
+/* Home/Exhibitions */
 #hero-section > a,
 .hero-section-div .heading-standard,
 .exhibitions-home > *,
+/* Specific-Exhibition */
 .article-specific-exhibition > .heading-background,
 .article-specific-exhibition > p,
 .article-specific-exhibition > img,
 .article-specific-exhibition > a,
+/* Information */
 .article-information,
 .article-information .heading-background,
 .article-information .heading-specific,
 .article-information .heading-small,
 .article-information > img,
-.section-information .button-standard {
+.section-information .button-standard,
+/* Tickets */
+.article-tickets .heading-small {
     margin-top: var(--margin-diff-element-vertical-mobile);
     margin-bottom: var(--margin-diff-element-vertical-mobile);
 }
 
 .hero-section-div > p,
-.article-information > p {
+.article-information > p,
+.article-tickets > p {
     margin-top: var(--margin-same-element-vertical-mobile);
     margin-bottom: var(--margin-same-element-vertical-mobile);
 }
@@ -232,7 +238,8 @@ ul {
 .hero-section-div,
 .exhibitions-home > p,
 .article-specific-exhibition > p,
-.article-information > p {
+.article-information > p,
+.article-tickets > p {
     padding-left: var(--padding-horizontal-mobile);
     padding-right: var(--padding-horizontal-mobile);
 }
@@ -573,6 +580,101 @@ form input {
 .section-information .button-standard {
     display: block;
     box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+/* Tickets-Page */
+
+
+
+
+
+.ticket-date-picker-form > * {
+    margin: var(--margin-diff-element-vertical-mobile) 0 var(--margin-diff-element-vertical-mobile) 0;
+}
+
+.ticket-date-picker-form .button-standard {
+    display: block;
+}
+
+.dates-value-changer {
+    display: flex;
+    border: var(--input-border-style) var(--input-border-width) #000000;
+}
+
+.dates-value-changer > * {
+    display: flex;
+    justify-content: center;
+}
+
+.dates-value-changer * {
+    font-family: var(--primary-font), var(--font-fallback);
+    font-size: var(--size-month-picker-month);
+    font-weight: var(--weight-month-picker-month);
+}
+
+.dates-value-changer-value {
+    border-left: var(--input-border-style) var(--input-border-width) #000000;
+    border-right: var(--input-border-style) var(--input-border-width) #000000;
+    width: 70%;
+}
+
+.dates-value-changer-key {
+    background-color: var(--date-color-standard);
+    width: 15%;
+}
+
+.dates-fieldset .dates-row > input,
+.dates-fieldset legend {
+    display: none;
+}
+
+.dates-fieldset label {
+    font-family: var(--primary-font), var(--font-fallback);
+    font-size: var(--size-dates-mobile);
+    font-weight: var(--weight-dates-mobile);
+    display: flex;
+    justify-content: center;
+    margin-top: var(--margin-dates-mobile);
+    margin-bottom: var(--margin-dates-mobile);
+}
+
+.dates-fieldset {
+    border: none;
+    padding-left: var(--padding-horizontal-mobile);
+    padding-right: var(--padding-horizontal-mobile);
+    margin: var(--margin-diff-element-vertical-mobile) 0 var(--margin-diff-element-vertical-mobile) 0;
+}
+
+.dates-row {
+    display: flex;
+    justify-content: space-between; 
+}
+
+.date-feb, .date-may {
+    background-color: var(--date-color-unpickable);
+    color: var(--date-color-standard);
+    border: var(--input-border-style) var(--input-border-width) var(--date-color-unpickable);
+}
+
+.date-mar {
+    background-color: var(--date-color-standard);
+    color: var(--text-color-standard);
+    border: var(--input-border-style) var(--input-border-width) var(--date-color-standard);
+}
+
+.date-feb,
+.date-mar,
+.date-may {
+    display: inline-block;
+    box-sizing: content-box;
+    width: 10%;
 }
 
 

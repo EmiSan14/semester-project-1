@@ -17,6 +17,8 @@
     --secondary-color-yellow: #F5ED15;
     --secondary-color-orange: #F07229;
     --secondary-color-red: #F5271C;
+    --date-color-standard: #D9D9D9;
+    --date-color-unpickable: #000000;
 
 
     /* Fonts */
@@ -34,6 +36,8 @@
     --size-footer-categories-mobile: 18px;
     --size-exhibition-p-home: 18px;
     --size-breadcrumbs: 24px;
+    --size-dates-mobile: 24px;
+    --size-month-picker-month: 24px;
 
     --weight-logo: 600;
     --weight-heading-standard-mobile: 600;
@@ -42,6 +46,8 @@
     --weight-descriptive-text-mobile: 300;
     --weight-footer-categories: 400;
     --weight-exhibition-p-home: 500;
+    --weight-dates-mobile: 600;
+    --weight-month-picker-month: 600;
 
 
 
@@ -57,6 +63,7 @@
     --margin-section-vertical-mobile: 60px;
     --margin-diff-element-vertical-mobile: 40px;
     --margin-same-element-vertical-mobile: 20px;
+    --margin-dates-mobile: 5px;
 
     --padding-horizontal-mobile: 10px;
 
@@ -85,5 +92,7 @@
 
     /* Forms */
 
+    --input-border-style: solid;
     --input-border-width: 2px;
+    --input-border-color: #000000;
 }

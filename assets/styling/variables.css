@@ -76,6 +76,21 @@
     --border-radius: 4px;
 
 
+    /* Responsive Design */
+
+    --margin-section-vertical-tablet: 80px;
+    --margin-diff-element-vertical-tablet: 60px;
+    --margin-same-element-vertical-tablet: 40px;
+
+    --margin-section-vertical-desktop: 100px;
+    --margin-diff-element-vertical-desktop: 80px;
+    --margin-same-element-vertical-desktop: 60px;
+
+    --padding-horizontal-tablet: 21px;
+
+    --padding-horizontal-desktop: 42px;
+
+
     /* Buttons */
 
     --size-cta-standard-mobile: 24px;

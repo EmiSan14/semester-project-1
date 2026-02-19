@@ -509,6 +509,11 @@ form input {
 
 
 
+
+
+
+
+
 /* Exhibitions-Page */
 
 
@@ -667,13 +672,6 @@ form input {
     background-color: var(--date-color-standard);
     color: var(--text-color-standard);
     border: var(--input-border-style) var(--input-border-width) var(--date-color-standard);
-    transition-property: background, border;
-    transition-duration: 0.1s;
-}
-
-.date-mar:hover {
-    background-color: var(--primary-color);
-    border: var(--input-border-style) var(--input-border-width) var(--cta-border-color-standard);
 }
 
 .date-feb,
@@ -683,6 +681,63 @@ form input {
     box-sizing: content-box;
     width: 10%;
 }
+
+
+
+
+
+
+
+
+/* Transitions */
+
+
+
+.button-standard,
+.button-exhibitions {
+    transition-property: padding;
+    transition-duration: 0.1s;
+}
+
+.button-standard:hover {
+    padding: 7px;
+}
+
+.button-exhibitions:hover {
+    padding: 5px 20px;
+}
+
+.social-media-icon {
+    transition-property: width;
+}
+
+.social-media-icon:hover {
+    width: 18%;
+}
+
+.dates-value-changer-key {
+    transition-property: background;
+}
+
+.dates-value-changer-key:hover {
+    background-color: #A1A1A1;
+}
+
+.date-mar {
+    transition-property: background, border;
+    transition-duration: 0.1s;
+}
+
+.date-mar:hover {
+    background-color: var(--primary-color);
+    border: var(--input-border-style) var(--input-border-width) var(--cta-border-color-standard);
+}
+
+
+
+
+
+
 
 
 

@@ -55,6 +55,8 @@
 
     --size-nav-a-big: 28px;
 
+    --size-exhibition-p-home-tablet: 14px;
+
 
 
 
@@ -102,6 +104,12 @@
     --cta-padding-small-mobile: 15px;
 
     --cta-border-width: 2px;
+
+
+    /* Respnisve Design */
+
+
+    --size-cta-standard-tablet: 20px; 
 
 
 

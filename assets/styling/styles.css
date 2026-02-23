@@ -101,20 +101,22 @@ ul {
 /* Footer */
 #heading-csm-footer,
 /* Home/Exhibitions */
-#hero-section > a,
+#hero-section a,
 .hero-section-div .heading-standard,
 .exhibitions-home > *,
 /* Specific-Exhibition */
 .article-specific-exhibition > .heading-background,
 .article-specific-exhibition > p,
+#planets-div > p,
 .article-specific-exhibition > img,
 .article-specific-exhibition > a,
+#cta-specific-exhibition-hidden,
 /* Information */
 .article-information,
 .article-information .heading-background,
 .article-information .heading-specific,
 .article-information .heading-small,
-.article-information > img,
+.article-information img,
 .section-information .button-standard,
 /* Tickets */
 .article-tickets .heading-small {
@@ -125,8 +127,16 @@ ul {
 
 /* Single */
 
+.social-media-icons {
+    margin-top: var(--margin-diff-element-vertical-mobile);
+}
+
 .newsletter-form .heading-standard,
-#email {
+#email,
+#special-event-home-div > *,
+#cosmology-specific-div img,
+#cosmology-specific-headings .h-b-cosmology,
+#cosmology-specific-headings .heading-background {
     margin-bottom: var(--margin-diff-element-vertical-mobile);
 }
 
@@ -140,7 +150,7 @@ ul {
 /* Small-Margin */
 
 .hero-section-div > p,
-.article-information > p,
+.article-information p,
 .article-tickets > p {
     margin-top: var(--margin-same-element-vertical-mobile);
     margin-bottom: var(--margin-same-element-vertical-mobile);
@@ -178,6 +188,9 @@ ul {
 /* Reoccuring Padding */
 
 
+/* Horizontal */
+
+
 /* Big */
 main,
 /* Header */
@@ -194,16 +207,21 @@ nav a,
 /* Home/Exhibitions */
 .hero-section-div,
 .exhibitions-home > p,
+#special-event-home-div > p,
 /* Specific-Exhibition */
 .article-specific-exhibition > p,
 /* Information */
 .article-information > p,
+.article-information-div > p,
 /* Tickets */
 .article-tickets > p,
 .dates-fieldset {
     padding-left: var(--padding-horizontal-mobile);
     padding-right: var(--padding-horizontal-mobile);
 }
+
+
+/* Vertical */
 
 
 .header-top,
@@ -222,6 +240,10 @@ nav a {
     padding-bottom: var(--footer-padding-vertical-mobile);
 }
 
+.bottom-button-div {
+    padding-top: var(--margin-section-vertical-mobile);
+}
+
 .back-to-blank {
     padding-bottom: var(--margin-section-vertical-mobile);
 }
@@ -230,14 +252,25 @@ nav a {
     padding-top: var(--margin-same-element-vertical-mobile);
 }
 
-.bottom-button-div {
-    padding-top: var(--margin-section-vertical-mobile);
-}
-
 .article-specific-exhibition ul,
 .article-information ul {
     padding-left: 30px;
     padding-right: var(--padding-horizontal-mobile);
+}
+
+
+
+
+
+/* Gap */
+
+
+.breadcrumbs {
+    gap: 8px;
+}
+
+.back-to-blank {
+    gap: var(--margin-same-element-vertical-mobile);
 }
 
 
@@ -375,7 +408,9 @@ nav a {
 .breadcrumbs {
     display: flex;
     flex-wrap: wrap;
+    /*
     gap: 8px;
+    */
 }
 
 .breadcrumbs > li {
@@ -402,7 +437,9 @@ nav a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    /*
     gap: var(--margin-same-element-vertical-mobile);
+    */
     flex-wrap: wrap;
 }
 
@@ -807,11 +844,15 @@ form input {
 
 */
 
-#hero-section > a,
+#hero-section a,
 .bottom-button-div > a {
     box-sizing: border-box;
     display: block;
     text-align: center;
+}
+
+#bottom-button-div-hidden {
+    display: none;
 }
 
 
@@ -880,6 +921,12 @@ form input {
     box-sizing: border-box;
 }
 
+#image-planets-hidden,
+#image-old-person-hidden,
+#cta-specific-exhibition-hidden {
+    display: none;
+}
+
 
 
 
@@ -894,6 +941,11 @@ form input {
 .section-information .button-standard {
     display: block;
     box-sizing: border-box;
+}
+
+#image-scientific-logo-hidden,
+#image-library-hidden {
+    display: none;
 }
 
 
@@ -1074,63 +1126,75 @@ form input {
 
 
 
-/* Test (DELETE LATER) */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* Media Queries */
 
 
-@media screen and (min-width: 1000px) {
 
 
-    #hero-section {
+@media screen and (min-width: 600px) {
+
+
+    /* Reoccuring Padding */
+
+
+    /* Big */
+    main,
+    /* Header */
+    .header-top,
+    nav a,
+    /* Footer */
+    .social-media,
+    .newsletter-form,
+    .footer-categories,
+    /* Home/Exhibitions */
+    .hero-section-div,
+    /* Specific-Exhibition */
+    .article-specific-exhibition > p,
+    /* Information */
+    .article-information > p,
+    /* Tickets */
+    .dates-fieldset {
+        padding-left: var(--padding-horizontal-tablet);
+        padding-right: var(--padding-horizontal-tablet);
+    }
+
+    .article-specific-exhibition ul,
+    .article-information ul {
+        padding-left: 30px;
+        padding-right: var(--padding-horizontal-tablet);
+    }
+
+    #special-event-home .buttons-event-night {
+        padding-left: var(--padding-horizontal-mobile);
+        padding-right: var(--padding-horizontal-mobile);
+    }
+
+
+
+
+    .social-media > .heading-standard {
+        width: 100%;
+    }
+
+    .social-media {
         display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
-    .hero-section-div {
-        height: 80%;
+    .social-media-icons {
+        width: 60%;
     }
 
-
-}
-
-    
-
-
-
-
-@media screen and (min-width: 800px) {
-    #logo-full {
-        display: block;
-    }
-
-    #logo-abbr {
-        display: none;
-    }
 }
 
 
 
 @media screen and (min-width: 700px) {
     
+
     header {
         border-bottom: none;
     }
@@ -1159,61 +1223,321 @@ form input {
 
 
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
 
 
-    /* Reoccuring Padding */
+    /* Main/Exhibitions-Pages */
 
-
-    /* Big */
-    main,
-    /* Header */
-    .header-top,
-    nav a,
-    /* Footer */
-    .social-media,
-    .newsletter-form,
-    .footer-categories,
-    /* Headings */
-    .heading-background > .heading-standard,
-    .heading-background > .heading-specific,
-    .heading-small,
-    /* Home/Exhibitions */
-    .hero-section-div,
-    .exhibitions-home > p,
-    /* Specific-Exhibition */
-    .article-specific-exhibition > p,
-    /* Information */
-    .article-information > p,
-    /* Tickets */
-    .article-tickets > p,
-    .dates-fieldset {
-        padding-left: var(--padding-horizontal-tablet);
-        padding-right: var(--padding-horizontal-tablet);
+    .section-main p {
+        font-size: var(--size-exhibition-p-home-tablet);
     }
 
-    .article-specific-exhibition ul,
-    .article-information ul {
-        padding-left: 30px;
-        padding-right: var(--padding-horizontal-tablet);
+    #hero-section,
+    #exhibitions-section-home,
+    #exhibitions-section-row-1,
+    #exhibitions-section-row-2,
+    #special-section-exhibitions,
+    .exhibitions-home,
+    #special-event-home-div {
+        display: flex;
     }
 
+    #exhibitions-section-home,
+    #exhibitions-section-row-1,
+    #exhibitions-section-row-2,
+    #special-section-exhibitions {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 
+    .exhibitions-home {
+        flex-direction: column;
+    }
 
+    .exhibitions-home > * {
+        margin-top: 0;
+        margin-bottom: var(--margin-diff-element-vertical-mobile);
+    }
 
-    .social-media > .heading-standard {
+    #bottom-button-div-2 {
+        margin-bottom: 0;
+    }
+
+    #exhibitions-section-home > .heading-section,
+    #exhibitions-section-row-1 > .heading-section,
+    #special-section-exhibitions > .heading-section,
+    .bottom-button-div {
         width: 100%;
     }
 
-    .social-media {
+    #exhibitions-section-home > .exhibitions-home,
+    #exhibitions-section-row-1 > .exhibitions-home,
+    #exhibitions-section-row-2 > .exhibitions-home,
+    #special-section-exhibitions > .exhibitions-home,
+    .bottom-button-div > a {
+        width: 31%;
+    }
+
+    .button-exhibitions, 
+    .button-specific-exhibition,
+    .bottom-button-div > a {
+        font-size: var(--size-cta-standard-tablet);
+        padding: var(--cta-padding-mobile) var(--cta-padding-mobile);
+    }
+
+    #hero-section a {
+        font-size: var(--size-cta-standard-tablet);
+    }
+
+    .bottom-button-div > a {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #bottom-button-div-1 {
+        display: none;
+    }
+
+    #display-hall,
+    #bottom-button-div-hidden,
+    #home-event-2 {
+        display: initial;
+    }
+
+    #hero-section {
+        flex-direction: row;
+    }
+
+    #special-event-home {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .hero-section-div,
+    #special-event-home-div {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 36%;
+    }
+
+    #hero-section img,
+    #special-event-home img {
+        width: 32%;
+    }
+
+    .hero-section-div .heading-background,
+    .hero-section-div .buttons-div,
+    #special-event-home-div .heading-background,
+    #special-event-home-div .buttons-div {
+        width: 100%;
+    }
+
+    .hero-section-div p,
+    #special-event-home-div p {
+        width: 90%;
+    }
+
+    .hero-section-div .heading-standard,
+    #special-event-home-div .heading-background {
+        display: flex;
+        align-items: center;
+        max-height: 18%;
+    }
+
+
+
+    /* Specific-Exhibition-Page + Information-Page */
+
+
+    .article-specific-exhibition,
+    #explore-together-article,
+    #for-kids-article,
+    #for-teachers-article,
+    #for-researchers-article,
+    #location-article,
+    #admission-article,
+    #support-article,
+    #volunteer-article,
+    #internships-article {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .image-div {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        justify-content: space-between;
     }
 
-    .social-media-icons {
-        width: 60%;
+    .article-specific-exhibition > *,
+    #cosmology-specific-div > *,
+    .article-information-div,
+    .article-information img,
+    .image-div {
+        width: 50%;
     }
+
+    #top-heading-explore-together,
+    #top-heading-explore-together-h2,
+    #image-library-hidden,
+    #top-heading-for-kids-h3,
+    #image-girl-equations-hidden,
+    #top-heading-for-teachers-h3,
+    #image-teacher-hidden,
+    #top-heading-for-researchers-h3,
+    #image-contraption-hidden,
+    #location-article,
+    #top-heading-location-h3,
+    #image-exhibit-white-hidden,
+    #top-heading-admission-h3,
+    #image-exterior-hidden,
+    #top-heading-hours-h3,
+    #top-heading-accessibility-h3,
+    #top-heading-food-and-drink-h3,
+    #top-heading-shop-h3,
+    #top-heading-support-h3,
+    #image-skull-hidden,
+    #top-heading-volunteer-h3,
+    #image-pentagons-hidden,
+    #top-heading-internships-h3 {
+        margin-top: 0;
+    }
+
+    .article-specific-exhibition .h-b-cosmology {
+        max-height: 40px;
+    }
+
+    #cosmology-specific-div {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #cosmology-specific-headings {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 80px;
+        justify-content: space-between;
+    }
+
+    .article-specific-exhibition > p {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #image-planets-mobile,
+    #image-old-person-1,
+    #cta-specific-exhibition-1,
+    #image-library-1,
+    #image-scientific-logo-1,
+    #image-girl-equations-1,
+    #image-mammoth-1,
+    #image-teacher-1,
+    #image-contraption-1,
+    #image-exhibit-white-1,
+    #image-exterior-1,
+    #image-skull-1,
+    #image-pentagons-1,
+    #cta-get-involved-1 {
+        display: none;
+    }
+
+    #image-planets-hidden,
+    #image-old-person-hidden,
+    #image-library-hidden,
+    #image-scientific-logo-hidden,
+    #image-girl-equations-hidden,
+    #image-mammoth-hidden,
+    #image-teacher-hidden,
+    #image-contraption-hidden,
+    #image-exhibit-white-hidden,
+    #image-exterior-hidden,
+    #image-skull-hidden,
+    #image-pentagons-hidden {
+        display: initial; 
+    }
+
+    #information-specific-exhibition .heading-background,
+    .article-specific-exhibition > .back-to-blank,
+    .image-div img {
+        width: 100%;
+    }
+
+    #admission-and-hours-div .heading-small {
+        padding-left: 0;
+    }
+
+    .article-specific-exhibition ul {
+        padding-left: 20px;
+    }
+
+    #planets-div > p,
+    .article-specific-exhibition ul,
+    #article-information-div > *,
+    .section-information p {
+        width: 80%;
+    }
+
+    #cta-specific-exhibition-hidden,
+    #cta-get-involved-hidden {
+        display: block;
+        width: 90%;
+    }
+
+    .article-information-div a,
+    #cta-get-involved-hidden {
+        width: 90%;
+    }
+
+
+
+
+
+
+    /* Information-Page */
+
+
+
+
+
+
+
+
+
 
 }
+
+
+
+
+@media screen and (min-width: 800px) {
+
+    #logo-full {
+        display: block;
+    }
+
+    #logo-abbr {
+        display: none;
+    }
+}
+
+
+
+
+@media screen and (min-width: 1000px) {
+
+
+    #hero-section {
+        display: flex;
+    }
+
+    .hero-section-div {
+        height: 80%;
+    }
+
+
+}
+
+
+
 

@@ -57,6 +57,15 @@
 
     --size-exhibition-p-home-tablet: 14px;
 
+    --size-heading-standard-desktop: 32px;
+    --size-heading-specific-desktop: 30px;
+    --size-heading-small-desktop: 28px;
+    --size-descriptive-text-desktop: 24px;
+    --size-exhibition-p-home-desktop: 20px;
+
+    --size-heading-standard-desktop-big: 40px;
+    --size-heading-specific-desktop-big: 38px;
+
 
 
 
@@ -92,6 +101,10 @@
 
     --padding-horizontal-desktop: 42px;
 
+    --padding-horizontal-desktop-big: 80px;
+
+    --padding-horizontal-desktop-ultra: 120px;
+
 
     /* Buttons */
 
@@ -106,10 +119,12 @@
     --cta-border-width: 2px;
 
 
-    /* Respnisve Design */
+    /* Responisve Design */
 
 
     --size-cta-standard-tablet: 20px; 
+
+    --size-cta-standard-desktop: 30px;
 
 
 

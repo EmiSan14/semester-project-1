@@ -1708,6 +1708,10 @@ form input {
 @media screen and (min-width: 1400px) {
 
 
+    .navigation-div {
+        width: 40%;
+    }
+
     #special-event-home-div p {
         width: 70%;
         margin-left: auto;

@@ -202,6 +202,7 @@ nav a,
 #special-event-home-div > p,
 /* Specific-Exhibition */
 .article-specific-exhibition > p,
+#planets-div > p,
 /* Information */
 .article-information > p,
 .article-information-div > p,
@@ -1247,7 +1248,8 @@ form input {
         justify-content: space-between;
     }
 
-    .article-specific-exhibition > p {
+    .article-specific-exhibition > p,
+    #planets-div > p {
         padding-left: 0;
         padding-right: 0;
     }

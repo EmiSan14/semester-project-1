@@ -1,136 +1,128 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap");
 
 :root {
+  /* Colors */
 
-    /* Colors */
+  --primary-color: #6cebf5;
+  --background-color: #ffffff;
+  --text-color-standard: #000000;
+  --cta-color-standard: #f47bbb;
+  --cta-color-standard-hover: #cf689e;
+  --secondary-color-purple: #8e00f4;
+  --secondary-color-purple-hover: #7200c4;
+  --secondary-color-green: #29f08d;
+  --secondary-color-green-hover: #21bf70;
+  --secondary-color-blue: #0115f5;
+  --secondary-color-blue-hover: #0110bf;
+  --secondary-color-yellow: #f5ed15;
+  --secondary-color-yellow-hover: #d4cd12;
+  --secondary-color-orange: #f07229;
+  --secondary-color-orange-hover: #d66625;
+  --secondary-color-red: #e62319;
+  --secondary-color-red-hover: #bf1d15;
+  --date-color-standard: #d9d9d9;
+  --date-color-unpickable: #000000;
 
-    --primary-color: #6CEBF5;
-    --background-color: #FFFFFF;
-    --text-color-standard: #000000;
-    --cta-color-standard: #F47BBB;
-    --secondary-color-purple: #8E00F4;
-    --secondary-color-green: #29F08D;
-    --secondary-color-blue: #0115F5;
-    --secondary-color-yellow: #F5ED15;
-    --secondary-color-orange: #F07229;
-    --secondary-color-red: #E62319;
-    --date-color-standard: #D9D9D9;
-    --date-color-unpickable: #000000;
+  /* Fonts */
 
+  --primary-font: "Outfit";
+  --secondary-font: "Neuton";
+  --font-fallback: "sans-serif";
 
-    /* Fonts */
+  --size-logo-mobile: 48px;
+  --size-nav-a-mobile: 32px;
+  --size-heading-standard-mobile: 24px;
+  --size-heading-specific-mobile: 22px;
+  --size-heading-small-mobile: 20px;
+  --size-descriptive-text-mobile: 16px;
+  --size-footer-categories-mobile: 18px;
+  --size-exhibition-p-home: 18px;
+  --size-breadcrumbs: 24px;
+  --size-dates-mobile: 24px;
+  --size-month-picker-month: 24px;
 
-    --primary-font: "Outfit";
-    --secondary-font: "Neuton";
-    --font-fallback: "sans-serif";
+  --weight-logo: 600;
+  --weight-heading-standard-mobile: 600;
+  --weight-heading-specific-mobile: 500;
+  --weight-heading-small-mobile: 500;
+  --weight-descriptive-text-mobile: 300;
+  --weight-footer-categories: 400;
+  --weight-exhibition-p-home: 500;
+  --weight-dates-mobile: 600;
+  --weight-month-picker-month: 600;
 
-    --size-logo-mobile: 48px;
-    --size-nav-a-mobile: 32px;
-    --size-heading-standard-mobile: 24px;
-    --size-heading-specific-mobile: 22px;
-    --size-heading-small-mobile: 20px;
-    --size-descriptive-text-mobile: 16px;
-    --size-footer-categories-mobile: 18px;
-    --size-exhibition-p-home: 18px;
-    --size-breadcrumbs: 24px;
-    --size-dates-mobile: 24px;
-    --size-month-picker-month: 24px;
+  /* Fonts Media Queries */
 
-    --weight-logo: 600;
-    --weight-heading-standard-mobile: 600;
-    --weight-heading-specific-mobile: 500;
-    --weight-heading-small-mobile: 500;
-    --weight-descriptive-text-mobile: 300;
-    --weight-footer-categories: 400;
-    --weight-exhibition-p-home: 500;
-    --weight-dates-mobile: 600;
-    --weight-month-picker-month: 600;
+  --size-nav-a-big: 28px;
 
+  --size-exhibition-p-home-tablet: 14px;
 
+  --size-heading-standard-desktop: 32px;
+  --size-heading-specific-desktop: 30px;
+  --size-heading-small-desktop: 28px;
+  --size-descriptive-text-desktop: 24px;
+  --size-exhibition-p-home-desktop: 20px;
 
-    /* Fonts Media Queries */
+  --size-heading-standard-desktop-big: 40px;
+  --size-heading-specific-desktop-big: 38px;
 
-    --size-nav-a-big: 28px;
+  /* Margins/Padding/Borders */
 
-    --size-exhibition-p-home-tablet: 14px;
+  --margin-section-vertical-mobile: 60px;
+  --margin-diff-element-vertical-mobile: 40px;
+  --margin-same-element-vertical-mobile: 20px;
+  --margin-dates-mobile: 5px;
 
-    --size-heading-standard-desktop: 32px;
-    --size-heading-specific-desktop: 30px;
-    --size-heading-small-desktop: 28px;
-    --size-descriptive-text-desktop: 24px;
-    --size-exhibition-p-home-desktop: 20px;
+  --padding-horizontal-mobile: 10px;
 
-    --size-heading-standard-desktop-big: 40px;
-    --size-heading-specific-desktop-big: 38px;
+  --header-padding-vertical-mobile: 15px;
+  --hamburger-menu-padding: 30px;
+  --footer-padding-vertical-mobile: 40px;
 
+  --border-style: solid;
+  --border-width: 1px;
+  --border-radius: 4px;
 
+  /* Responsive Design */
 
+  --margin-section-vertical-tablet: 80px;
+  --margin-diff-element-vertical-tablet: 60px;
+  --margin-same-element-vertical-tablet: 40px;
 
-    /* Margins/Padding/Borders */
+  --margin-section-vertical-desktop: 100px;
+  --margin-diff-element-vertical-desktop: 80px;
+  --margin-same-element-vertical-desktop: 60px;
 
-    --margin-section-vertical-mobile: 60px;
-    --margin-diff-element-vertical-mobile: 40px;
-    --margin-same-element-vertical-mobile: 20px;
-    --margin-dates-mobile: 5px;
+  --padding-horizontal-tablet: 21px;
 
-    --padding-horizontal-mobile: 10px;
+  --padding-horizontal-desktop: 42px;
 
-    --header-padding-vertical-mobile: 15px;
-    --hamburger-menu-padding: 30px;
-    --footer-padding-vertical-mobile: 40px;
+  --padding-horizontal-desktop-big: 80px;
 
-    --border-style: solid;
-    --border-width: 1px;
-    --border-radius: 4px;
+  --padding-horizontal-desktop-ultra: 120px;
 
+  /* Buttons */
 
-    /* Responsive Design */
+  --size-cta-standard-mobile: 24px;
+  --weight-cta-standard: 600;
 
-    --margin-section-vertical-tablet: 80px;
-    --margin-diff-element-vertical-tablet: 60px;
-    --margin-same-element-vertical-tablet: 40px;
+  --cta-border-color-standard: #000000;
 
-    --margin-section-vertical-desktop: 100px;
-    --margin-diff-element-vertical-desktop: 80px;
-    --margin-same-element-vertical-desktop: 60px;
+  --cta-padding-mobile: 5px;
+  --cta-padding-small-mobile: 15px;
 
-    --padding-horizontal-tablet: 21px;
+  --cta-border-width: 2px;
 
-    --padding-horizontal-desktop: 42px;
+  /* Responisve Design */
 
-    --padding-horizontal-desktop-big: 80px;
+  --size-cta-standard-tablet: 20px;
 
-    --padding-horizontal-desktop-ultra: 120px;
+  --size-cta-standard-desktop: 30px;
 
+  /* Forms */
 
-    /* Buttons */
-
-    --size-cta-standard-mobile: 24px;
-    --weight-cta-standard: 600;
-
-    --cta-border-color-standard: #000000;
-
-    --cta-padding-mobile: 5px;
-    --cta-padding-small-mobile: 15px;
-
-    --cta-border-width: 2px;
-
-
-    /* Responisve Design */
-
-
-    --size-cta-standard-tablet: 20px; 
-
-    --size-cta-standard-desktop: 30px;
-
-
-
-    /* Forms */
-
-    --input-border-style: solid;
-    --input-border-width: 2px;
-    --input-border-color: #000000;
+  --input-border-style: solid;
+  --input-border-width: 2px;
+  --input-border-color: #000000;
 }

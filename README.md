@@ -35,4 +35,4 @@ https://github.com/EmiSan14/JavaScript-1-Course-Assignment-Emil-Sandstrom.git
 
 ## Contact
 
-[E-Mail](emiloskar14@outlook.com)
+E-Mail: emiloskar14@outlook.com

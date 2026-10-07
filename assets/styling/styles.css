@@ -623,6 +623,16 @@ form input {
   display: none;
 }
 
+.heading-background {
+  display: flex;
+  align-items: center;
+}
+
+#heading-section-home-1,
+#heading-section-home-2 {
+  width: 100%;
+}
+
 /* Exhibitions-Page */
 
 .h-b-robotics-and-ai,
@@ -675,6 +685,10 @@ form input {
 #image-scientific-logo-hidden,
 #image-library-hidden {
   display: none;
+}
+
+#heading-section-information-1 {
+  width: 100%;
 }
 
 /* Tickets-Page */
@@ -1043,6 +1057,19 @@ input:hover {
     display: flex;
     align-items: center;
     max-height: 18%;
+  }
+
+  .exhibitions-home {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .exhibitions-home > * {
+    width: 100%;
+  }
+
+  .buttons-div {
+    align-self: flex-end;
   }
 
   /* Specific-Exhibition-Page + Information-Page */
